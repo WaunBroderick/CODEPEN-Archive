@@ -39,7 +39,7 @@
 }
 .awardsTwo{
   text-align: right;
-  margin: 70px auto;
+  margin: 50px auto;
   max-width: 900px;
 }
 .movieThree{
@@ -48,7 +48,7 @@
 }
 .awardsThree{
   text-align: left;
-  margin: 80px auto;
+  margin: 70px auto;
     max-width: 900px;
 }
 
@@ -58,6 +58,10 @@ body {
   
 }
 
+p.c{
+    font-family: 'roboto';
+    font-size: 18px;
+}
 h1
 {
   font-family: 'Cedarville Cursive';
@@ -67,4 +71,11 @@ p.b
 {
   font-family: 'Cedarville Cursive';
     font-size: 23px;
+}
+
+.links
+{
+    font-family: 'Cedarville Cursive';
+    font-size: 23px;
+    color: #fff;
 }
