@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
+
 .canvas1 {
  grid-area: canvas1;
 }
@@ -10,9 +12,13 @@
  grid-area: canvas3;
 }
 
+.canvas4 {
+ grid-area: canvas4;
+}
+
 .Grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: ". canvas1 canvas2 canvas3 ." ". . . . ." ". . . . .";
+  grid-template-areas: ". canvas1 canvas2 canvas3 canvas4 ." ". . . . . ." ". . . . . .";
 }
