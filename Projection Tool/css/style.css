@@ -1,1 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Thasadith');
+
+.testText{
+  color:red;
+  position: absolute;
+}
+
+#projVis{
+  position: relative;
+}
+
+#container {
+  position: relative;
+}
+#container canvas, #overlay {
+  position: absolute;
+}
