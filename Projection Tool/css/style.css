@@ -1,17 +1,18 @@
+@charset "UTF-8";
+
+/*!
+ * Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
 @font-face {
   font-family: 'Webly';
   src: url('./assets/fonts/weblysleekuil.ttf'); /* IE9 Compat Modes */
 }
 
-.testText{
-  color:red;
-  position: absolute;
-}
-
-#projVis{
-  position: relative;
-  z-index:-1;
-}
+/* CANVAS LAYERING SPECIFICATIONS BELOW */
 
 #container {
   position: relative;
@@ -22,42 +23,56 @@
   z-index:-1;
 }
 
-#param1, #param2, #param3, #param4, #param5, #param6, #param7, #param1Icon, #param1Title{
+/* DYNAMIC VARIABLES BELOW */
+
+#headCountNum, #hiresNum, #exitsNum, #internalInNum, #internalOutNum, #movementNum, #centerpieceIcon, #param1Icon, #headCountTitle{
   position: absolute;
   font-size:20px;
   font-family: 'Webly', Fallback, sans-serif;
 }
 
-#param1Icon{
-  
-}
-
-#param7{
-  font-size:45px;
-}
-
-#param1Icon{
-
-}
-
-#xMovements{
+#internalMovementCaption{
   position: absolute;
-  z-index:1;
-  left: 30px;
-  top: 50px;
+  font-size:14px;
+  top: 251px;
+  left:328px;
+  color:#085394;
 }
 
-#xMovementsTitle{
+/* DYNAMIC VARIABLES TITLES BELOW */
+
+#hiresTitle, #exitsTitle, #internalInTitle, #internalOutTitle{
   position: absolute;
-  z-index:1;
-  left: 30px;
-  top: 30px;
+  font-size:14px;
+  font-family: 'Webly', Fallback, sans-serif;
 }
 
-#param1, #param2, #param3, #param4, #param5, #param6{
-  position: absolute;
-  font-size:20px;
+#hiresTitle{
+  top: 150px;
+  left:190px;
+  color:#67CA1E;
 }
+
+#exitsTitle{
+  top: 290px;
+  left:190px;
+  color:#c40f3c;
+}
+
+#internalInTitle{
+  top: 150px;
+  left:580px;
+  color:#67CA1E;
+}
+
+#internalOutTitle{
+  top: 290px;
+  left:580px;
+  color:#ff9900;
+}
+
+
+/* IMAGE SPECIFICATIONS BELOW */
 
 #HiresArrow{
   position:absolute;
@@ -97,6 +112,15 @@
   transform: rotate(35deg); 
 }
 
+#CenterArrows{
+  position:absolute;
+  height:90px;
+  width: 125px;
+  left:345px;
+  top:180px;
+}
+
+/* ICON STYLING BELOW */
 .fa-minus-circle{
   color: red;
   font-size:15px;
@@ -108,7 +132,16 @@
   font-size:15px;
 }
 
-/* SLIDER SWITCH */
+.fa-users{
+  color:#666666;
+}
+
+.fa-retweet{
+  font-size:35px;
+  color:#666666;
+}
+
+/* SLIDER SWITCH BELOW */
 
 .switch {
   position: absolute;
@@ -175,4 +208,4 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* SLIDER SWITCH */
+/* SLIDER SWITCH ABOVE*/

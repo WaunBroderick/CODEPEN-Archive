@@ -1,66 +1,69 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>A Pen by  Waun Broderick</title>
-  
-  
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Employee Movement Visualization</title>
 
-  
+    <!--Imports-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!DOCTYPE html>
-<link rel="stylesheet" 
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- HeadCount Switcher Button -->
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
 
-<html>
-<body>
-
-  <!-- HeadCount Switcher Button -->
-  <label class="switch">
-   <input type="checkbox">
-   <span class="slider round"></span>
-  </label>
-  
 
     <!-- Canvas Container -->
-<div id="container">
-<canvas id="myCanvas" width="800" height="400" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
-  
-  
-    <!-- Variable HTML Container -->
-<div id="param1">param1</div>
-<div id="param1Title">Total Headcount</div>
-<img id="InternalMovementArrow" src="./assets/img/GreenArrow1.png"></img>
+    <div id="container">
+        <canvas id="myCanvas" width="800" height="400" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
 
 
-<div id="param2">param2</div>
-<img id="HiresArrow" src="./assets/img/GreenArrow2.png"></img>
-<div id="param3">param3</div>
-<img id="ExitsArrow" src="./assets/img/RedArrow2.png"></img>
-<div id="param4">param4</div>
-<img id="MovementOutArrow" src="./assets/img/RedArrow1.png"></img>
-<div id="param5">param5</div>
-<div id="param6">param6</div>
-<div id="param7"><i class="fas fa-retweet"></i></div>
-</div>
+        <!-- Variable HTML Containers -->
+        <div class="container">
+            <span id="HeadCountHolder">
+                <div id="headCountNum">HeadCount_PlaceHolder</div>
+                <div id="headCountTitle">Total Headcount</div>
+            </span>
+            <span id="HiresHolder">
+                <div id="hiresNum">Hires_PlaceHolder</div>
+                <span id="hiresTitle">Hires</span>
+                <img id="HiresArrow" src="./assets/img/GreenArrow2.png"></img>
+            </span>
+            <span id="ExitsHolder">
+                <img id="ExitsArrow" src="./assets/img/RedArrow2.png"></img>
+                <div id="exitsNum">Exits_PlaceHolder</div>
+                <span id="exitsTitle">Exits</span>
+            </span>
+            <span id="intetnalInHolder">
+                <img id="InternalMovementArrow" src="./assets/img/GreenArrow1.png"></img>
+                <div id="internalInNum">param4</div>
+                <span id="internalInTitle">Internal Movement In</span>
+            </span>
+            <span id="intetnalOutHolder"> <img id="MovementOutArrow" src="./assets/img/RedArrow1.png"></img>
+                <div id="internalOutNum">internalOut_PlaceHolder</div>
+                <span id="internalOutTitle">internal Movement Out</span>
+            </span>
+            <span id="centerPieceHolder">
+                <div id="movementNum">movement_PlaceHolder</div>
+                <div id="centerpieceIcon"><i class="fas fa-retweet"></i></div>
+                <img id="CenterArrows" src="./assets/img/CenterArrows.png"></img>
+                <div id="internalMovementCaption">Internal Movement Within</div>
+            </span>
+
+        </div>
+    </div>
 
 </body>
-</html>
-
-
-    <script  src="js/index.js"></script>
-
-
-
-
-</body>
+<script src="js/index.js"></script>
 
 </html>

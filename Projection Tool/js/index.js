@@ -1,3 +1,4 @@
+//Test set
 drawInternalMovement("myCanvas", 123, 20, -20, 45, -35);
 
 
@@ -20,9 +21,10 @@ var Movement = TotalHeadCount + Hires - Exits + InternalIn - InternalOut
 
   
 ctx.beginPath();
+ctx.lineWidth= 5;
 ctx.arc(xCenter,yCenter,cSize,0,2*Math.PI);
 ctx.stroke();
-ctx.fillStyle = '#CCCCCC';
+ctx.fillStyle = '#eeeeee';
 ctx.fill();
 
 
@@ -34,50 +36,50 @@ var VerticalCenterLine = (yCenter.toString(10) + "px");
 var CircleTopLine = (cTop.toString(10) + "px");
 
 
-document.getElementById("param1").innerHTML = TotalHeadCount + "<i class='fa fa-users'></i>";
+document.getElementById("headCountNum").innerHTML = TotalHeadCount + "&nbsp;<span id='userIcon'><i class='fa fa-users'></i><span>";
 var totHeadCountHorizontal = ((xCenter-15).toString(10) + "px");
-document.getElementById("param1").style.left = ((xCenter-30).toString(10) + "px");
-document.getElementById("param1").style.top = ((cTop+15).toString(10) + "px");;
+document.getElementById("headCountNum").style.left = ((xCenter-30).toString(10) + "px");
+document.getElementById("headCountNum").style.top = ((cTop+15).toString(10) + "px");;
 
-document.getElementById("param1Title").style.left = ((xCenter-65).toString(10) + "px");
-document.getElementById("param1Title").style.top = ((cTop+35).toString(10) + "px");;
+document.getElementById("headCountTitle").style.left = ((xCenter-65).toString(10) + "px");
+document.getElementById("headCountTitle").style.top = ((cTop+35).toString(10) + "px");;
 
 
-document.getElementById("param6").innerHTML = Movement;
-document.getElementById("param6").style.left = totHeadCountHorizontal;
-var movementPos = ((yCenter-20).toString(10) + "px");
-document.getElementById("param6").style.top = movementPos;
+document.getElementById("movementNum").innerHTML = Movement;
+document.getElementById("movementNum").style.left = totHeadCountHorizontal;
+var movementPos = ((yCenter-30).toString(10) + "px");
+document.getElementById("movementNum").style.top = movementPos;
 
 
   
-document.getElementById("param2").innerHTML = Hires + "<i class='fas fa-plus-circle'></i>";
-document.getElementById("param2").style.left = "200px";
-document.getElementById("param2").style.top = "165px";
+document.getElementById("hiresNum").innerHTML = Hires + "&nbsp;<i class='fas fa-plus-circle'></i>";
+document.getElementById("hiresNum").style.left = "200px";
+document.getElementById("hiresNum").style.top = "165px";
 
   
-document.getElementById("param3").innerHTML = Exits + "<i class='fas fa-minus-circle'></i>";
-document.getElementById("param3").style.left = "188px";
-document.getElementById("param3").style.top = "270px";
+document.getElementById("exitsNum").innerHTML = Exits + "&nbsp;<i class='fas fa-minus-circle'></i>";
+document.getElementById("exitsNum").style.left = "188px";
+document.getElementById("exitsNum").style.top = "270px";
 
 
-document.getElementById("param4").innerHTML = InternalIn + "<i class='fas fa-plus-circle'></i>";
-document.getElementById("param4").style.left = "585px";
-document.getElementById("param4").style.top = "165px";
+document.getElementById("internalInNum").innerHTML = InternalIn + "&nbsp;<i class='fas fa-plus-circle'></i>";
+document.getElementById("internalInNum").style.left = "585px";
+document.getElementById("internalInNum").style.top = "165px";
 
   
-document.getElementById("param5").innerHTML = InternalOut + "<i class='fas fa-minus-circle'></i>";
-document.getElementById("param5").style.left = "580px";
-document.getElementById("param5").style.top = "270px";
+document.getElementById("internalOutNum").innerHTML = InternalOut + "&nbsp;<i class='fas fa-minus-circle'></i>";
+document.getElementById("internalOutNum").style.left = "580px";
+document.getElementById("internalOutNum").style.top = "270px";
 
-document.getElementById("param7").style.left = ((xCenter-40).toString(10) + "px");;
-document.getElementById("param7").style.top = "200px";
+document.getElementById("centerpieceIcon").style.left = ((xCenter-20).toString(10) + "px");;
+document.getElementById("centerpieceIcon").style.top = "210px";
 
 
   
 }
 
 function updateInternalMovement(TotalHeadCount, Hires, Exits, InternalIn, InternalOut){
-
+//FIX ALL HTML NAMES TO MAKE FUNCTIONAL
 document.getElementById("param1").innerHTML = TotalHeadCount;
 
 document.getElementById("param2").innerHTML = Hires;
@@ -91,12 +93,3 @@ document.getElementById("param5").innerHTML = InternalOut;
 document.getElementById("param6").innerHTML = Movement;
 
 }
-
-
-$("#xMovements").on("change", function(e) {
-    //drawInternalMovement("myCanvas", 1230, 20, -20, 45, -35);
-    updateInternalMovement("myCanvas", 1230, 200, -200, 450, -350)
-
-});
-
-//
